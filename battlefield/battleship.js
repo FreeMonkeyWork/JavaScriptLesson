@@ -1,7 +1,8 @@
 /**
- * Created by avsapronov on 09.03.2016.
+ * Created by Arkady Sapronov on 09.03.2016.
  */
 
+    //вычисляем позицию кораблика
 var randomLoc = Math.floor(Math.random() * 5);
 var location1 = randomLoc;
 var location2 = location1 + 1;
@@ -10,7 +11,7 @@ var guess;
 var hits = 0;
 var guesses = 0;
 var isSunk = false;
-
+//стреляем по кораблику
 while (isSunk == false) {
     guess = prompt("Ready, aim, fire! (enter a number 0-6):");
     if (guess < 0 || guess > 6) {
